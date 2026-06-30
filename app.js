@@ -2,7 +2,7 @@ const translations = {
     fr: {
         job_title: "Chauffeuse de Taxi",
         description: "À votre service pour tous vos déplacements professionnels et personnels, navettes gares et aéroports.",
-        call_me: "Appeler (+33 6 12 34 56 78)",
+        call_me: "Appeler (+33 7 51 48 58 02)",
         email_me: "Envoyer un Email",
         whatsapp_me: "Réserver via WhatsApp",
         save_contact: "Enregistrer le contact"
@@ -10,7 +10,7 @@ const translations = {
     en: {
         job_title: "Taxi Driver",
         description: "At your service for all your professional and personal trips, station and airport transfers.",
-        call_me: "Call (+33 6 12 34 56 78)",
+        call_me: "Call (+33 7 51 48 58 02)",
         email_me: "Send an Email",
         whatsapp_me: "Book via WhatsApp",
         save_contact: "Save to Contacts"
@@ -18,7 +18,7 @@ const translations = {
     es: {
         job_title: "Taxista",
         description: "A su servicio para todos sus viajes profesionales y personales, traslados a estaciones y aeropuertos.",
-        call_me: "Llamar (+33 6 12 34 56 78)",
+        call_me: "Llamar (+33 7 51 48 58 02)",
         email_me: "Enviar un Correo",
         whatsapp_me: "Reservar por WhatsApp",
         save_contact: "Guardar Contacto"
@@ -61,11 +61,11 @@ document.addEventListener('DOMContentLoaded', () => {
     saveContactBtn.addEventListener('click', () => {
         const vcard = `BEGIN:VCARD
 VERSION:3.0
-FN:Jeanne Dupont
+FN:Taxi Sab
 TITLE:Chauffeuse de Taxi
-TEL;TYPE=CELL:+33612345678
-EMAIL:contact@jeannedupont-taxi.com
-URL:https://wa.me/33612345678
+TEL;TYPE=CELL:+33751485802
+EMAIL:sabahtaxi@icloud.com
+URL:https://wa.me/33751485802
 END:VCARD`;
 
         const blob = new Blob([vcard], { type: "text/vcard" });
@@ -74,7 +74,7 @@ END:VCARD`;
         const a = document.createElement('a');
         a.style.display = 'none';
         a.href = url;
-        a.download = 'jeanne_dupont_taxi.vcf';
+        a.download = 'taxi_sab.vcf';
         document.body.appendChild(a);
         a.click();
         
