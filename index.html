@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chauffeuse de Taxi - Contact</title>
+    <meta name="description" content="Carte de visite numérique de votre chauffeuse de taxi. Réservez votre trajet facilement.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="card">
+        <header class="card-header">
+            <div class="language-selector">
+                <button class="lang-btn active" data-lang="fr" aria-label="Français">FR</button>
+                <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+                <button class="lang-btn" data-lang="es" aria-label="Español">ES</button>
+            </div>
+            <div class="profile-container">
+                <img src="assets/profile.jpg" alt="Photo de profil de la chauffeuse" class="profile-image">
+            </div>
+            <h1 class="name">Jeanne Dupont</h1>
+            <h2 class="title" data-i18n="job_title">Chauffeuse de Taxi</h2>
+        </header>
+
+        <main class="card-body">
+            <p class="description" data-i18n="description">À votre service pour tous vos déplacements professionnels et personnels, navettes gares et aéroports.</p>
+
+            <div class="contact-links">
+                <a href="tel:+33612345678" class="contact-btn phone">
+                    <i class="fas fa-phone-alt"></i>
+                    <span data-i18n="call_me">Appeler (+33 6 12 34 56 78)</span>
+                </a>
+                
+                <a href="mailto:contact@jeannedupont-taxi.com" class="contact-btn email">
+                    <i class="fas fa-envelope"></i>
+                    <span data-i18n="email_me">Envoyer un Email</span>
+                </a>
+
+                <a href="https://wa.me/33612345678" class="contact-btn whatsapp" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-whatsapp"></i>
+                    <span data-i18n="whatsapp_me">Réserver via WhatsApp</span>
+                </a>
+            </div>
+        </main>
+        
+        <footer class="card-footer">
+            <button class="save-contact-btn" id="saveContact">
+                <i class="fas fa-address-card"></i>
+                <span data-i18n="save_contact">Enregistrer le contact</span>
+            </button>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
