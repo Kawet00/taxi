@@ -1,6 +1,5 @@
 const translations = {
     fr: {
-        job_title: "Chauffeuse de Taxi",
         description: "À votre service pour tous vos déplacements professionnels et personnels, navettes gares et aéroports.",
         call_me: "Appeler (+33 7 51 48 58 02)",
         email_me: "Envoyer un Email",
@@ -8,7 +7,6 @@ const translations = {
         save_contact: "Enregistrer le contact"
     },
     en: {
-        job_title: "Taxi Driver",
         description: "At your service for all your professional and personal trips, station and airport transfers.",
         call_me: "Call (+33 7 51 48 58 02)",
         email_me: "Send an Email",
@@ -16,7 +14,6 @@ const translations = {
         save_contact: "Save to Contacts"
     },
     es: {
-        job_title: "Taxista",
         description: "A su servicio para todos sus viajes profesionales y personales, traslados a estaciones y aeropuertos.",
         call_me: "Llamar (+33 7 51 48 58 02)",
         email_me: "Enviar un Correo",
@@ -62,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const vcard = `BEGIN:VCARD
 VERSION:3.0
 FN:Taxi Sab
-TITLE:Chauffeuse de Taxi
+TITLE:Chauffeur de Taxi
 TEL;TYPE=CELL:+33751485802
 EMAIL:sabahtaxi@icloud.com
 URL:https://wa.me/33751485802
